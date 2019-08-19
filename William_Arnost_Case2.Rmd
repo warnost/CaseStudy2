@@ -504,6 +504,11 @@ ttestout <- cbind.data.frame(testnames,testpval)
 ttestout$testpval <- round(ttestout$testpval,5) 
 names(ttestout) <- c("Variable","P-Value")
 ttestout %>% kable()
+
+forgendertest <- casedata %>% filter(JobRole=="Research Director")
+table(forgendertest$Gender,forgendertest$JobRole)
+gender.t <- t.test(forgendertest$MonthlyIncome~forgendertest$Gender)
+gender.t
 ```
 
 
