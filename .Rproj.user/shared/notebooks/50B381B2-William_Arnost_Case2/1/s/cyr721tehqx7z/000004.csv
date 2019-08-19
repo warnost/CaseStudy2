@@ -1,0 +1,4 @@
+"0","library(GGally)"
+"0","ggpairs(data = casedata, "
+"0","              mapping = aes(color = Attrition),"
+"0","              columns = c(""HourlyRate"",""DailyRate"",""MonthlyRate"",""MonthlyIncome""))"

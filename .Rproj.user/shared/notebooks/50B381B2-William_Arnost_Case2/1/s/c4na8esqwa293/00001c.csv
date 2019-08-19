@@ -1,0 +1,5 @@
+"0","final.pred.att <- predict(fit.rf.08, attrition.test.data)"
+"0","final.output.att <- as.data.frame(cbind(attrition.test.data$ID,final.pred.att))  %>% rename(ID = ""V1"", Attrition = final.pred.att) "
+"0","final.output.att$Attrition <- ifelse(final.output.att$Attrition == 1, ""No"",""Yes"")"
+"0",""
+"0",""

@@ -1,0 +1,5 @@
+"0","ggplot(casedata,aes(MonthlyIncome)) + geom_histogram(aes(y=..density..), bins = 30) + "
+"0","   stat_function(fun=dnorm,"
+"0","      color=""red"","
+"0","      args=list(mean=mean(casedata$MonthlyIncome), "
+"0","      sd=sd(casedata$MonthlyIncome))) "

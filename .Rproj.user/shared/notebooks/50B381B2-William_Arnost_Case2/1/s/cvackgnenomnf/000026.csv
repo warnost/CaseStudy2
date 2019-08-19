@@ -1,0 +1,19 @@
+"0","fit.rf.04=train(MonthlyIncome ~ JobRole + JobLevel + TotalWorkingYears + YearsAtCompany + YearsInCurrentRole + "
+"0","                     Age + Department + Education + BusinessTravel, data=train.data, method=""rf"", importance = TRUE, ntree = 50)"
+"0","varImp(fit.rf.04)"
+"1","rf"
+"1"," "
+"1","variable importance
+
+"
+"1","  only "
+"1",""
+"1","20"
+"1",""
+"1"," most important variables shown (out of "
+"1",""
+"1","24"
+"1",""
+"1",")
+
+"

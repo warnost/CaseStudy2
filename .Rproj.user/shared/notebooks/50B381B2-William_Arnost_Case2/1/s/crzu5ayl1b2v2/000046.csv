@@ -1,0 +1,6 @@
+"0","trnCtrl <- trainControl( method = ""repeatedcv"", "
+"0","                         number = 10, repeats = 5)"
+"0","fit.lm.03 <- train(MonthlyIncome ~ JobRole + JobLevel + TotalWorkingYears + YearsAtCompany + YearsInCurrentRole + "
+"0","                     Age + Department + Education + BusinessTravel, "
+"0","                   data = train.data, method = ""lm"", metric = ""RMSE"", trControl = trnCtrl)"
+"0","broom::tidy(summary(fit.lm.03)) %>% mutate_if(is.numeric, round, 5)"

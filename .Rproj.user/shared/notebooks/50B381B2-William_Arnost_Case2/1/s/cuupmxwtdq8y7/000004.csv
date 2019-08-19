@@ -1,0 +1,2 @@
+"0","gg_miss_var(casedata, show_pct=TRUE) + labs(title=""Percent Missing by Data Field"") +"
+"0","  theme(legend.position = ""none"",plot.title = element_text(hjust = 0.5),axis.title.y=element_text(angle=0,vjust=1))"

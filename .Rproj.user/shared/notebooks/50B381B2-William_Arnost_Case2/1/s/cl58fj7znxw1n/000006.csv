@@ -1,0 +1,1 @@
+"0","ggplot(casedata, aes(x = YearsSinceLastPromotion, y = MonthlyIncome)) + geom_point()"

@@ -1,0 +1,3 @@
+"0","g <- propPlot(casedata, x = ""JobRole"", ""WorkLifeBalance"") + theme(axis.text.x = element_text(angle = 90))"
+"0","g$layers[[2]] <- NULL"
+"0","g"

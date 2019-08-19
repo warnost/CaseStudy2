@@ -1,0 +1,4 @@
+"0","confint(fit.lm.04$finalModel) %>% "
+"0","  as.data.frame() %>% rownames_to_column() %>% "
+"0","  rename(Variable = rowname) %>% "
+"0","  mutate_if(is.numeric, round, 5) %>% kable() "

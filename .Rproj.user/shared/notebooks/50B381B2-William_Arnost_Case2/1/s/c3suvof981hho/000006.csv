@@ -1,0 +1,2 @@
+"0","fit.lm.01 <- train(MonthlyIncome ~ JobRole + JobLevel + TotalWorkingYears, data = train.data, method = ""lm"", metric = ""RMSE"", trControl = trnCtrl)"
+"0","broom::tidy(summary(fit.lm.01)) %>% mutate_if(is.numeric, round, 5)"

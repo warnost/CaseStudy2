@@ -1,0 +1,6 @@
+"0","pred.lm.04 <- predict(fit.lm.04, test.data)"
+"0","RMSE(pred.lm.04, test.data$MonthlyIncome)"
+"1","[1]"
+"1"," 1120.71161513"
+"1","
+"

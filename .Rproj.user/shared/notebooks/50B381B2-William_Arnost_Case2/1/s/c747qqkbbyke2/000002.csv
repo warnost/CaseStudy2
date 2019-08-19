@@ -1,0 +1,14 @@
+"0","trnCtrl <- trainControl( method = ""repeatedcv"", "
+"0","                         number = 10, repeats = 5,"
+"0","                         summaryFunction = twoClassSummary,"
+"0","                         classProbs = TRUE)"
+"0",""
+"0","fit.rf.08=train(Attrition ~ OverTime + MaritalStatus + StockOptionLevel + JobLevel + YearsInCurrentRole + MonthlyIncome +"
+"0","                JobInvolvement + WorkingYearsGroup,"
+"0","               data=train.data, method=""rf"", importance = TRUE, ntree = 50, trControl = trnCtrl, metric=""Spec"")"
+"0","varImp(fit.rf.08)"
+"1","rf"
+"1"," "
+"1","variable importance
+
+"

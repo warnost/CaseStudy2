@@ -1,0 +1,5 @@
+"0","caret::confusionMatrix(table(fit.nb$pred,train.data$Attrition))
+"
+"2","Error in table(fit.nb$pred, train.data$Attrition) : 
+  all arguments must have the same length
+"

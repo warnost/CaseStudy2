@@ -1,0 +1,1 @@
+"0","propPlot(casedata, x = ""JobRole"",""Attrition"") + theme(axis.text.x = element_text(angle = 90))"

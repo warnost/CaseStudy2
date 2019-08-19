@@ -1,0 +1,8 @@
+"0","colsToDrop <- c(""ID"",""EmployeeNumber"",""EmployeeCount"",""Over18"",""StandardHours"",""DailyRate"",""HourlyRate"",""MonthlyRate"")"
+"0","colsToDrop2 <- names(casedata)[c(37:length(casedata))]"
+"0","lm.train.01 <- train.data %>% select(-c(colsToDrop,colsToDrop2))"
+"0",""
+"0","trnCtrl <- trainControl( method = ""repeatedcv"", "
+"0","                         number = 10, repeats = 5)"
+"0","fit.lm.01 <- train(MonthlyIncome ~ ., data = lm.train.01, method = ""lm"", metric = ""RMSE"", trControl = trnCtrl)"
+"0","broom::tidy(summary(fit.lm.01))"

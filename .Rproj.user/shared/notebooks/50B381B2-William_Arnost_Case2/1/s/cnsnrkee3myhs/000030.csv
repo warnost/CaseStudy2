@@ -1,0 +1,7 @@
+"0","casedata$TotalSatisfaction <- as.factor("
+"0","                              as.numeric(casedata$EnvironmentSatisfaction) +"
+"0","                              as.numeric(casedata$JobSatisfaction) + "
+"0","                              as.numeric(casedata$RelationshipSatisfaction)"
+"0","                              )"
+"0",""
+"0","propPlot(casedata, x = ""TotalSatisfaction"", ""Attrition"") "

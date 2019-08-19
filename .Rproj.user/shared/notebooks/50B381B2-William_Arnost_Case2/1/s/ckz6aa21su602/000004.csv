@@ -1,0 +1,41 @@
+"0","attrition.test.data <-read_csv('CaseStudy2CompSet No Attrition.csv')"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  BusinessTravel = [31mcol_character()[39m,
+  Department = [31mcol_character()[39m,
+  EducationField = [31mcol_character()[39m,
+  Gender = [31mcol_character()[39m,
+  JobRole = [31mcol_character()[39m,
+  MaritalStatus = [31mcol_character()[39m,
+  Over18 = [31mcol_character()[39m,
+  OverTime = [31mcol_character()[39m
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","income.test.data <-read_csv('CaseStudy2CompSet No Salary.csv')"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  Attrition = [31mcol_character()[39m,
+  BusinessTravel = [31mcol_character()[39m,
+  Department = [31mcol_character()[39m,
+  EducationField = [31mcol_character()[39m,
+  Gender = [31mcol_character()[39m,
+  JobRole = [31mcol_character()[39m,
+  MaritalStatus = [31mcol_character()[39m,
+  Over18 = [31mcol_character()[39m,
+  OverTime = [31mcol_character()[39m
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","colsToFactor <- c(""BusinessTravel"",""Department"",""EducationField"",""Gender"",""JobRole"",""MaritalStatus"",""Over18"",""OverTime"",""StockOptionLevel"",""JobLevel"",""JobInvolvement"",""Education"",""EnvironmentSatisfaction"",""JobSatisfaction"",""RelationshipSatisfaction"",""WorkLifeBalance"",""PerformanceRating"")"
+"0","# Consider ""StockOptionLevel"",""JobLevel"",""JobInvolvement"",""Education""; They could be coded as numeric"
+"0","attrition.test.data[,colsToFactor] <- lapply(attrition.test.data[,colsToFactor], as.factor)"
+"0",""
+"0","colsToFactor <- c(""Attrition"",""BusinessTravel"",""Department"",""EducationField"",""Gender"",""JobRole"",""MaritalStatus"",""Over18"",""OverTime"",""StockOptionLevel"",""JobLevel"",""JobInvolvement"",""Education"",""EnvironmentSatisfaction"",""JobSatisfaction"",""RelationshipSatisfaction"",""WorkLifeBalance"",""PerformanceRating"")"
+"0","income.test.data[,colsToFactor] <- lapply(income.test.data[,colsToFactor], as.factor)"
+"0",""
+"0","attrition.test.data$WorkingYearsGroup <- cut(attrition.test.data$TotalWorkingYears, c(0,5,10,15,20,40), labels = c(""0-5"",""5-10"",""10-15"",""15-20"",""20-40""), include.lowest = TRUE)"

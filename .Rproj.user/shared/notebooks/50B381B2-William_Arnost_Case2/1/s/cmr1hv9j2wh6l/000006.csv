@@ -1,0 +1,1 @@
+"0","vioPlot(casedata, x = ""Gender"",y=""MonthlyIncome"") + facet_wrap(~ JobRole)+ scale_fill_manual(values=cbbPalette)"

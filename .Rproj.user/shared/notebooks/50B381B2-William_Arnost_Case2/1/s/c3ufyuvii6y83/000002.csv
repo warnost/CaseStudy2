@@ -1,0 +1,7 @@
+"0","library(caret)"
+"0","set.seed(42)"
+"0","train_ind <- createDataPartition(y = casedata$ID, "
+"0","                               p = 0.8, "
+"0","                               list = FALSE)"
+"0","train.data <- casedata[train_ind,]"
+"0","test.data <- casedata[-train_ind,]"

@@ -1,0 +1,8 @@
+"0","pred.lm.01 <- predict(fit.lm.01, test.data)"
+"0","RMSE(pred.lm.01, test.data$MonthlyIncome)"
+"1","[1]"
+"1"," 1105.25412745"
+"1","
+"
+"0","fit.lm.02 <- train(logMonthlyIncome ~ JobRole + JobLevel + TotalWorkingYears, data = train.data, method = ""lm"", metric = ""RMSE"", trControl = trnCtrl)"
+"0","broom::tidy(summary(fit.lm.02)) %>% mutate_if(is.numeric, round, 5)"

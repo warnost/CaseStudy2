@@ -1,0 +1,23 @@
+"0","library(knitr)"
+"0","library(rmdformats)"
+"0","library(kableExtra)"
+"0","library(doParallel)"
+"2","Loading required package: foreach
+"
+"2","Loading required package: iterators
+"
+"2","Loading required package: parallel
+"
+"0","workers <- makeCluster(12L)"
+"0","registerDoParallel(workers)"
+"0",""
+"0","## Global options"
+"0","options(max.print=""75"")"
+"0","opts_chunk$set(echo=TRUE,"
+"0","	             cache=FALSE,"
+"0","               prompt=FALSE,"
+"0","               tidy=TRUE,"
+"0","               comment=NA,"
+"0","               message=FALSE,"
+"0","               warning=FALSE)"
+"0","opts_knit$set(width=75)"

@@ -1,0 +1,1 @@
+"0","barPlot(casedata, ""JobRole"") + theme(axis.text.x = element_text(angle = 90))"

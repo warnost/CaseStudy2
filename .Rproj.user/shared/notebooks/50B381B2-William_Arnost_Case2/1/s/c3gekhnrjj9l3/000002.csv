@@ -1,0 +1,2 @@
+"0","fit<-lm(data = train, MonthlyIncome ~ ID)"
+"0","broom::tidy(fit)"

@@ -1,0 +1,7 @@
+"0","#broom::tidy(summary(fit.rf.04)) %>% mutate_if(is.numeric, round, 5)"
+"0","pred.rf.05 <- predict(fit.rf.05, test.data)"
+"0","RMSE(pred.rf.05, test.data$MonthlyIncome)"
+"1","[1]"
+"1"," 1109.48789208"
+"1","
+"

@@ -1,0 +1,7 @@
+"0","fit.rf.05=train(MonthlyIncome ~ JobRole + JobLevel + TotalWorkingYears + BusinessTravel, data=train.data, method=""rf"", importance = TRUE, ntree = 50)"
+"0","varImp(fit.rf.05)"
+"1","rf"
+"1"," "
+"1","variable importance
+
+"
